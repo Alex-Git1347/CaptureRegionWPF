@@ -1,0 +1,13 @@
+﻿<prism:PrismApplication xmlns:prism="http://prismlibrary.com/" 
+             x:Class="CaptureRegionWPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:VM="clr-namespace:CaptureRegionWPF.ViewModels"
+             xmlns:converters="clr-namespace:CaptureRegionWPF.Converters"
+             xmlns:local="clr-namespace:CaptureRegionWPF"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <VM:ServiceLocator x:Key="ServiceLocator"/>
+        <converters:NotRecordingConverter x:Key="NotRecordingConverter"/>
+    </Application.Resources>
+</prism:PrismApplication>
